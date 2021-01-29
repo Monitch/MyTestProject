@@ -1,13 +1,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Add value of point</title>
+    <title>My test project</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body class="w3-light-blue">
 <div class="w3-container w3-blue-grey w3-opacity w3-right-align">
-    <h1>AddValue</h1>
+    <h1>Add Point</h1>
 </div>
 <div class="w3-container w3-padding">
     <%

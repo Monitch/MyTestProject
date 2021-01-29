@@ -2,7 +2,6 @@ package app.servlets;
 
 import app.model.Model;
 
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -19,7 +18,6 @@ public class SetResult extends HttpServlet {
     }
 
     static int clockWayPoint(int x1, int x2, int y1, int y2) {
-
         return (x2 - x1) * (y2 + y1);
     }
 
@@ -28,7 +26,6 @@ public class SetResult extends HttpServlet {
         if (x1 == x2 || y1 == y2) res = true;
         return res;
     }
-
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -41,7 +38,7 @@ public class SetResult extends HttpServlet {
         boolean square = true;
         int clockWay = 0;
 
-        if (X.size() <= 3) {
+        if (X.size() < 4) {
             countOfPoint = false;
         }
 
