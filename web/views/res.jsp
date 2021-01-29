@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Result</title>
+    <title>My test project</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
@@ -25,18 +25,16 @@
     <canvas style="border: 3px solid blue;border-radius: 10px"  id="canvas" ></canvas>
 </div>
 <script>
-    var x = [];
-    var y = [];
-     x = <%=request.getAttribute("X")%>;
-     y = <%=request.getAttribute("Y")%>;
+    var x = <%=request.getAttribute("X")%>;
+    var y = <%=request.getAttribute("Y")%>;
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
     ctx.lineWidth = 3;
     ctx.strokeStyle = 'red';
    for (let i = 0; i < x.length; i++) {
-        ctx.lineTo(x[i]*50,y[i]*50);
+        ctx.lineTo(x[i] * 50, y[i] * 50);
     }
-   ctx.lineTo(x[0]*50,y[0]*50);
+   ctx.lineTo(x[0] * 50, y[0] * 50);
    ctx.stroke();
 </script>
 <div class="w3-container w3-grey w3-opacity w3-right-align w3-padding">

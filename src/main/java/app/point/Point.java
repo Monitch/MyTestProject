@@ -1,11 +1,8 @@
 package app.point;
 
 public class Point {
-    private String pointX;
-    private String pointY;
-
-    public Point() {
-    }
+    private final String pointX;
+    private final String pointY;
 
     public Point(String X, String Y) {
         this.pointX = X;
@@ -15,15 +12,7 @@ public class Point {
         return pointX;
     }
 
-    public void setPointX(String pointX) {
-        this.pointX = pointX;
-    }
-
     public String getPointY() {
         return pointY;
-    }
-
-    public void setPointY(String pointY) {
-        this.pointY = pointY;
     }
 }

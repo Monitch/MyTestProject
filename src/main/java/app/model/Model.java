@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Model {
-    private static Model instance = new Model();
+    private static final Model instance = new Model();
 
-    private List<Point> model;
+    private final List<Point> model;
 
     public static Model getInstance() {
         return instance;

@@ -26,7 +26,6 @@ public class GetValue extends HttpServlet {
 
             if (!pointX.equals("") && !pointY.equals("")) {
                 model.add(point);
-                log(String.valueOf(model.listX().size()));
             }
 
             request.setAttribute("pointX",pointX);
