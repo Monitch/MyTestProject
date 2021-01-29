@@ -9,8 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.List;
 
 public class GetValue extends HttpServlet {
     @Override
@@ -18,6 +16,7 @@ public class GetValue extends HttpServlet {
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("views/form.jsp");
         requestDispatcher.forward(req, resp);
     }
+
     protected void doPost(HttpServletRequest request,
                           HttpServletResponse response) throws ServletException, IOException {
             String pointX = request.getParameter("pointX");
@@ -26,10 +25,10 @@ public class GetValue extends HttpServlet {
             Model model = Model.getInstance();
 
             if (!pointX.equals("") && !pointY.equals("")) {
-
                 model.add(point);
                 log(String.valueOf(model.listX().size()));
             }
+
             request.setAttribute("pointX",pointX);
             request.setAttribute("pointY",pointY);
             doGet(request, response);
