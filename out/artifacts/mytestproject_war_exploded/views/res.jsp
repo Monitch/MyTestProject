@@ -32,9 +32,9 @@
     ctx.lineWidth = 3;
     ctx.strokeStyle = 'red';
    for (let i = 0; i < x.length; i++) {
-        ctx.lineTo(x[i] * 50, y[i] * 50);
+        ctx.lineTo(x[i] * 20, y[i] * 20);
     }
-   ctx.lineTo(x[0] * 50, y[0] * 50);
+   ctx.lineTo(x[0] * 20, y[0] * 20);
    ctx.stroke();
 </script>
 <div class="w3-container w3-grey w3-opacity w3-right-align w3-padding">
